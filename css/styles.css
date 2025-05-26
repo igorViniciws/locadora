@@ -1,0 +1,145 @@
+/* Estilos personalizados para o sistema de locadora de veículos */
+
+/* Estilos para a página de login */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+.login-tip {
+    border-left: 4px solid #0d6efd;
+    padding: 15px;
+    background-color: rgba(13, 110, 253, 0.1);
+    border-radius: 0 4px 4px 0;
+    margin-top: 15px;
+}
+
+.login-tip h5 {
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.login-tip p {
+    margin-bottom: 5px;
+}
+
+.login-tip code {
+    background: #fff;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #333;
+}
+
+/* Estilos para a página principal (dashboard) */
+.action-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-start;
+}
+
+.btn-group-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.rent-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    order: 2;
+}
+
+.delete-btn {
+    order: 1;
+}
+
+.days-input {
+    width: 60px !important;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+}
+
+/* Estilos para a barra de usuário */
+.user-info {
+    background-color: #000; /* Cor preta, como na imagem */
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: #fff; /* Texto branco */
+}
+
+.user-icon i {
+    color: #fff; /* Ícone branco */
+}
+
+.welcome-text {
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.welcome-text strong {
+    background-color: #fff; /* Fundo branco para o username, como na imagem */
+    color: #000; /* Texto preto */
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.btn-outline-danger {
+    border-color: #fff; /* Borda branca para o botão Sair */
+    color: #fff; /* Texto branco */
+}
+
+.btn-outline-danger:hover {
+    background-color: #fff; /* Fundo branco ao passar o mouse */
+    color: #dc3545; /* Cor do texto ao hover (vermelho Bootstrap danger) */
+    border-color: #fff;
+}
+
+/* Estilos para cartões de mesma altura */
+.same-height-row > [class*='col'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.same-height-row .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.same-height-row .card-body {
+    flex: 1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .action-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn-group-actions {
+        flex-direction: column;
+    }
+    
+    .rent-group {
+        order: 1;
+        width: 100%;
+    }
+    
+    .delete-btn {
+        order: 2;
+        width: 100%;
+    }
+    
+    .days-input {
+        width: 100% !important;
+    }
+}
